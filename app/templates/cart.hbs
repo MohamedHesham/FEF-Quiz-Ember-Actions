@@ -1,0 +1,8 @@
+<h2>Your Shopping Cart</h2>
+<ul>
+  {{#each model as |item|}}
+    <li>Color: {{item.color}} Size: {{item.size}} Price: ${{item.price}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
